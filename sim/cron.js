@@ -16,8 +16,8 @@ const simulationLoop = async () => {
 };
 
 // Schedule every 2 minutes
-cron.schedule('*/2 * * * *', simulationLoop);
+cron.schedule('* * * * *', simulationLoop);
 
-console.log('🚀 Simulation loop started (every 2 minutes)');
+console.log('🚀 Simulation loop started (every 1 minute)');
 
 module.exports = { simulationLoop };
